@@ -1,0 +1,35 @@
+.bg-standing {
+    background-image: url("/wp-content/themes/druks2/img/local/bg-overlay-standing.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-horizon {
+    background-image: url('/wp-content/themes/druks2/img/local/background-horizontal.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-transition-horizon-to-standing {
+    background-image: url('/wp-content/themes/druks2/img/local/background-horizontal.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: 640px) {
+        background-image: url("/wp-content/themes/druks2/img/local/bg-overlay-standing.png");
+    }
+}
+
+.bg-transition-standing-to-horizon {
+    background-image: url("/wp-content/themes/druks2/img/local/bg-overlay-standing.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: 640px) {
+        background-image: url('/wp-content/themes/druks2/img/local/background-horizontal.png');
+    }
+}

@@ -1,0 +1,61 @@
+.form {
+    * {
+        font-family: Satoshi, sans-serif !important;
+        font-weight: 700 !important;
+        color: #fff !important;
+        font-size: 18px !important;
+    }
+
+
+    input,
+    select {
+        font-size: 18px !important;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding: 0vw 23px !important;
+        height: 4vw !important;
+        font-family: Satoshi, sans-serif !important;
+        font-weight: 700 !important;
+        color: #171717 !important;
+        border-radius: 15px !important;
+        height: 55px !important;
+
+        &::placeholder {
+            color: #171717 !important;
+            opacity: 1;
+            /* Firefox */
+        }
+
+        &::-ms-input-placeholder {
+            /* Edge 12 -18 */
+            color: #171717 !important;
+        }
+    }
+
+    .gform_wrapper.gravity-theme .gfield input.medium,
+    .gform_wrapper.gravity-theme .gfield select.medium {
+        width: 100% !important;
+    }
+
+    .button {
+        width: 100% !important;
+        background: #CDF200 !important;
+        border-radius: 15px !important;
+        font-family: Bison Bold, sans-serif !important;
+        font-weight: 400 !important;
+        font-size: 40px !important;
+        line-height: 40px !important;
+        color: #FF0079 !important;
+        padding-bottom: 5px !important;
+        cursor: pointer !important;
+
+    }
+
+    .ginput_total {
+        font-family: Satoshi, sans-serif !important;
+        font-weight: 700 !important;
+        color: #fff !important;
+        font-size: 22px !important;
+        padding: 0px !important;
+    }
+}
