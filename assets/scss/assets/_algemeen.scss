@@ -11,6 +11,14 @@ body {
 
 @import url("https://fonts.cdnfonts.com/css/satoshi");
 
+
+@font-face {
+  font-family: 'Bison Bold';
+  src: url('/wp-content/themes/druks2/fonts/BisonBold.woff2') format('woff2'), url('/wp-content/themes/druks2/fonts/BisonBold.woff') format('woff');
+  font-display: swap;
+  font-style: normal;
+}
+
 main {
   padding-top: 0px;
 }
