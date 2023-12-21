@@ -678,5 +678,140 @@ add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 
 
 
+/*
+|--------------------------------------------------------------------------
+| VERTALINGEN
+|--------------------------------------------------------------------------
+|
+| 
+| 
+|
+*/
+
+function aangepaste_add_to_cart_tekst($tekst) {
+    if ($tekst == 'Toevoegen aan winkelwagen') {
+        $tekst = 'Volgende stap';
+    }
+    return $tekst;
+}
+
+// Voeg de filterfunctie toe aan de gettext-hook
+add_filter('gettext', 'aangepaste_add_to_cart_tekst', 20, 3);
+
+// Voeg de volgende code toe aan functions.php of een aangepaste plugin
+
+function aangepaste_checkout_knop_tekst($tekst) {
+    return 'Betalen'; // Vervang 'Mijn Aangepaste Tekst' door de gewenste tekst
+}
+
+add_filter('woocommerce_order_button_text', 'aangepaste_checkout_knop_tekst');
+
+
+
+/*
+|--------------------------------------------------------------------------
+| AFTER ADD TO CART PAGE
+|--------------------------------------------------------------------------
+|
+| 
+| 
+|
+*/
+
+function redirect_after_add_to_cart() {
+    if (isset($_REQUEST['add-to-cart'])) {
+        // Controleer de referer (de pagina van waaraf het product is toegevoegd)
+        if (wp_get_referer() == get_permalink(wc_get_page_id('product'))) {
+            wp_redirect(wc_get_checkout_url());
+            exit;
+        } else {
+            // Het product is vanaf een andere pagina dan de productpagina toegevoegd
+            wp_redirect(wc_get_checkout_url());
+            exit;
+        }
+    }
+}
+add_action('template_redirect', 'redirect_after_add_to_cart');
+
+
+
+/*
+|--------------------------------------------------------------------------
+| CHECKOUT VELDEN
+|--------------------------------------------------------------------------
+|
+| 
+| 
+|
+*/
+
+
+// Voeg de volgende code toe aan functions.php of een aangepaste plugin
+
+// Verwijder het standaard adresveld "Straatnaam en huisnummer"
+function verwijder_straatnaam_huisnummer_veld($address_fields) {
+    unset($address_fields['address_1']);
+    unset($address_fields['address_2']);
+    return $address_fields;
+}
+
+add_filter('woocommerce_default_address_fields', 'verwijder_straatnaam_huisnummer_veld');
+
+// Voeg afzonderlijke velden toe voor "Straatnaam", "Huisnummer" en "Huisnummer toevoeging"
+function aangepaste_adresvelden($fields) {
+    $fields['street_name'] = array(
+        'label'       => __('Straatnaam', 'woocommerce'),
+        'placeholder' => _x(' ', 'placeholder', 'woocommerce'),
+        'required'    => true,
+        'class'       => array('form-row-wide'),
+        'clear'       => true,
+    );
+
+    $fields['house_number'] = array(
+        'label'       => __('Huisnummer', 'woocommerce'),
+        'placeholder' => _x(' ', 'placeholder', 'woocommerce'),
+        'required'    => true,
+        'class'       => array('form-row-first'), // Plaats dit veld aan de linkerkant
+        'clear'       => true,
+    );
+
+    $fields['house_number_addition'] = array(
+        'label'       => __('Toevoeging', 'woocommerce'),
+        'placeholder' => _x(' ', 'placeholder', 'woocommerce'),
+        'required'    => false,
+        'class'       => array('form-row-last'), // Plaats dit veld aan de rechterkant
+        'clear'       => true,
+    );
+
+    return $fields;
+}
+
+add_filter('woocommerce_billing_fields', 'aangepaste_adresvelden');
+add_filter('woocommerce_shipping_fields', 'aangepaste_adresvelden');
+
+
+
+
+
+// Voeg de volgende code toe aan functions.php of een aangepaste plugin
+
+// Uitschakelen van de velden "Staat / County", "Telefoon" en "Bedrijfsnaam"
+function uitschakelen_onnodige_adresvelden($fields) {
+    // Uitschakelen "Staat / County" veld
+    unset($fields['state']);
+
+    // Uitschakelen "Bedrijfsnaam" veld
+    unset($fields['company']);
+
+    return $fields;
+}
+
+add_filter('woocommerce_default_address_fields', 'uitschakelen_onnodige_adresvelden');
+add_filter('woocommerce_billing_fields', 'uitschakelen_onnodige_adresvelden');
+add_filter('woocommerce_shipping_fields', 'uitschakelen_onnodige_adresvelden');
+
+
+
+
 
 

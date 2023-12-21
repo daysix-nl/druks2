@@ -6,6 +6,10 @@ module.exports = {
     "./page-templates/*.{html,js,php}",
     "./blocks/*/*.{html,js,php}",
     "./componenten/*.{html,js,php}",
+    "./wc-templates/*.{html,js,php}",
+    "./woocommerce/*.{html,js,php}",
+    "./woocommerce/checkout/*.{html,js,php}",
+    "./woocommerce/global/*.{html,js,php}",
   ],
   theme: {
     container: {
