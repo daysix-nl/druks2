@@ -146,7 +146,7 @@
                             <div class="flex justify-between">
                                 <p class="font-satoshi text-16 leading-16 text-[#2B2828]">Betaal veilig met</p>
                                 <div class="w-[156px] pb-2">
-                                    <img class="w-full" src="/wp-content/themes/freekvonk/img/local/logos-pay.png" alt="Betaal opties" class="w-full h-auto">
+                                    <img class="w-full" src="https://druksdeal.nl/wp-content/uploads/2023/12/betalingen.png" alt="Betaal opties" class="w-full h-auto">
                                 </div>
                             <?php
                             } else {
