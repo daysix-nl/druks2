@@ -6,14 +6,6 @@
 
  get_header(); ?>
 
-<main>
-    
-
-
-</main>
-
-
-
 <main class="">
     <section class="bg-[#012F8C] relative py-[13vw] md:py-[8vw] overflow-hidden">
         <div class="w-[95vw] md:w-[70vw] md:ml-[8vw] mx-auto md:mx-[unset] z-[50] relative">
@@ -27,7 +19,7 @@
     </section>
 
       
-  <section class="w-[100vw] h-[180vw] md:h-[55.64vw] overflow-hidden relative">
+    <section class="w-[100vw] h-[180vw] md:h-[55.64vw] overflow-hidden relative">
         <img class="h-full object-cover object-center absolute top-0 left-0 w-full" src="/wp-content/themes/druks2/img/local/bg-druks.png" alt="">
     </section>
 

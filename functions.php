@@ -746,69 +746,69 @@ add_action('template_redirect', 'redirect_after_add_to_cart');
 */
 
 
-// Voeg de volgende code toe aan functions.php of een aangepaste plugin
+// // Voeg de volgende code toe aan functions.php of een aangepaste plugin
 
-// Verwijder het standaard adresveld "Straatnaam en huisnummer"
-function verwijder_straatnaam_huisnummer_veld($address_fields) {
-    unset($address_fields['address_1']);
-    unset($address_fields['address_2']);
-    return $address_fields;
-}
+// // Verwijder het standaard adresveld "Straatnaam en huisnummer"
+// function verwijder_straatnaam_huisnummer_veld($address_fields) {
+//     unset($address_fields['address_1']);
+//     unset($address_fields['address_2']);
+//     return $address_fields;
+// }
 
-add_filter('woocommerce_default_address_fields', 'verwijder_straatnaam_huisnummer_veld');
+// add_filter('woocommerce_default_address_fields', 'verwijder_straatnaam_huisnummer_veld');
 
-// Voeg afzonderlijke velden toe voor "Straatnaam", "Huisnummer" en "Huisnummer toevoeging"
-function aangepaste_adresvelden($fields) {
-    $fields['street_name'] = array(
-        'label'       => __('Straatnaam', 'woocommerce'),
-        'placeholder' => _x(' ', 'placeholder', 'woocommerce'),
-        'required'    => true,
-        'class'       => array('form-row-wide'),
-        'clear'       => true,
-    );
+// // Voeg afzonderlijke velden toe voor "Straatnaam", "Huisnummer" en "Huisnummer toevoeging"
+// function aangepaste_adresvelden($fields) {
+//     $fields['street_name'] = array(
+//         'label'       => __('Straatnaam', 'woocommerce'),
+//         'placeholder' => _x(' ', 'placeholder', 'woocommerce'),
+//         'required'    => true,
+//         'class'       => array('form-row-wide'),
+//         'clear'       => true,
+//     );
 
-    $fields['house_number'] = array(
-        'label'       => __('Huisnummer', 'woocommerce'),
-        'placeholder' => _x(' ', 'placeholder', 'woocommerce'),
-        'required'    => true,
-        'class'       => array('form-row-first'), // Plaats dit veld aan de linkerkant
-        'clear'       => true,
-    );
+//     $fields['house_number'] = array(
+//         'label'       => __('Huisnummer', 'woocommerce'),
+//         'placeholder' => _x(' ', 'placeholder', 'woocommerce'),
+//         'required'    => true,
+//         'class'       => array('form-row-first'), // Plaats dit veld aan de linkerkant
+//         'clear'       => true,
+//     );
 
-    $fields['house_number_addition'] = array(
-        'label'       => __('Toevoeging', 'woocommerce'),
-        'placeholder' => _x(' ', 'placeholder', 'woocommerce'),
-        'required'    => false,
-        'class'       => array('form-row-last'), // Plaats dit veld aan de rechterkant
-        'clear'       => true,
-    );
+//     $fields['house_number_addition'] = array(
+//         'label'       => __('Toevoeging', 'woocommerce'),
+//         'placeholder' => _x(' ', 'placeholder', 'woocommerce'),
+//         'required'    => false,
+//         'class'       => array('form-row-last'), // Plaats dit veld aan de rechterkant
+//         'clear'       => true,
+//     );
 
-    return $fields;
-}
+//     return $fields;
+// }
 
-add_filter('woocommerce_billing_fields', 'aangepaste_adresvelden');
-add_filter('woocommerce_shipping_fields', 'aangepaste_adresvelden');
-
-
+// add_filter('woocommerce_billing_fields', 'aangepaste_adresvelden');
+// add_filter('woocommerce_shipping_fields', 'aangepaste_adresvelden');
 
 
 
-// Voeg de volgende code toe aan functions.php of een aangepaste plugin
 
-// Uitschakelen van de velden "Staat / County", "Telefoon" en "Bedrijfsnaam"
-function uitschakelen_onnodige_adresvelden($fields) {
-    // Uitschakelen "Staat / County" veld
-    unset($fields['state']);
 
-    // Uitschakelen "Bedrijfsnaam" veld
-    unset($fields['company']);
+// // Voeg de volgende code toe aan functions.php of een aangepaste plugin
 
-    return $fields;
-}
+// // Uitschakelen van de velden "Staat / County", "Telefoon" en "Bedrijfsnaam"
+// function uitschakelen_onnodige_adresvelden($fields) {
+//     // Uitschakelen "Staat / County" veld
+//     unset($fields['state']);
 
-add_filter('woocommerce_default_address_fields', 'uitschakelen_onnodige_adresvelden');
-add_filter('woocommerce_billing_fields', 'uitschakelen_onnodige_adresvelden');
-add_filter('woocommerce_shipping_fields', 'uitschakelen_onnodige_adresvelden');
+//     // Uitschakelen "Bedrijfsnaam" veld
+//     unset($fields['company']);
+
+//     return $fields;
+// }
+
+// add_filter('woocommerce_default_address_fields', 'uitschakelen_onnodige_adresvelden');
+// add_filter('woocommerce_billing_fields', 'uitschakelen_onnodige_adresvelden');
+// add_filter('woocommerce_shipping_fields', 'uitschakelen_onnodige_adresvelden');
 
 
 
