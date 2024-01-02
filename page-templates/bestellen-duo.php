@@ -26,7 +26,7 @@
         <img src="/wp-content/themes/druks2/img/local/background.png" alt="" class="absolute min-h-full min-w-full object-cover object-center top-0 left-0 right-0">
     </section>
 
-    <section class="bg-zalm py-[13vw] md:py-[8vw]">
+    <section id="faq" class="bg-zalm py-[13vw] md:py-[8vw]">
         <div class="w-[95vw] md:w-[70vw] md:ml-[8vw] mx-auto md:mx-[unset]">
             <h2 class="text-[12vw] leading-[12vw] md:text-[5.7vw] md:leading-[6vw] text-[#fff] uppercase font-bison relative z-[56] text-center  bg-pink w-fit px-[3vw]"><span class="pb-[0.2vw]">Veelgestelde vragen</span></h2>
             <p class="text-[4vw] leading-[5.9vw] md:text-[1.2vw] md:leading-[1.9vw] text-black-text font-satoshi font-bold mt-[8vw] md:mt-[3vw] mb-[6vw] md:mb-[3vw]">Ik probeer hier de meest gestelde vragen rondom het DUO hoofdstuk te beantwoorden, zodat je kunt bepalen of het hoofdstuk ook op jouw situatie van toepassing is. Staat je vraag er niet tussen, stuur mij dan een DM op Instagram en dan probeer ik deze alsnog te beantwoorden. DUO heeft deze regeling in het leven geroepen om je als student met een functiebeperking te ondersteunen. Je komt onder in aanmerking voor deze regeling als je adhd, add, autisme, dyslexie, angststoornis of ptss hebt.</p>
