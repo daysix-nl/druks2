@@ -136,13 +136,13 @@
                     </g>
                 </svg>
                 <h2 class="order-3 md:order-2 text-[9vw] leading-[9vw] md:text-[5.7vw] md:leading-[6.7vw] text-white uppercase font-bison mt-[6vw] md:mt-[0.8vw] relative z-[56] text-center md:text-left mx-auto md:mx-[unset]">Succesvol dealen met AD(h)D</h2>
-                <p class="order-4 md:order-3 text-[4.5vw] leading-[5.9vw] md:text-[1.61vw] md:leading-[2.2vw] text-white font-satoshi font-bold max-w-[70vw] md:max-w-[55vw] mt-[3vw] md:mt-[0.8vw] text-center md:text-left mx-auto md:mx-[unset] relative z-[50]">Herkenbaar, geestig & DRUKS: Francien is terug! Met dit boek ga je van chronisch uitstellen naar alles is uitvogelbaar.</p>
+                <p class="order-4 md:order-3 text-[4.5vw] leading-[5.9vw] md:text-[1.61vw] md:leading-[2.2vw] text-white font-satoshi font-bold max-w-[70vw] md:max-w-[55vw] mt-[3vw] md:mt-[0.8vw] text-center md:text-left mx-auto md:mx-[unset] relative z-[50]">Met DRUKS 2 ga je van chronisch uitstellen naar alles is uitvogelbaar. Inclusief Tikkie terug aan DUO hoofdstuk.</p>
                 <a href="/druks-2" class="order-2 md:order-4 text-[9.2vw] md:text-[2.7vw] uppercase font-bison bg-[#CDF200] text-[#FF0079] md:hover:bg-[#FF93C1] md:hover:text-[#CDF200] rounded-[11px] px-[8vw] md:px-[4vw] py-[0vw] flex items-center w-fit mt-[77vw] md:mt-[1.9vw] mx-auto md:mx-[unset] relative z-[50]"><span class="mb-[0.2vw]">Bestel nu druks</span></a>
             </div>
         </div>
 
         <div class="absolute w-[41vw] top-[54.5vw] right-[30vw] md:w-[24.8vw] md:top-[13.7vw] md:right-[3vw] z-[51]">
-            <img src="/wp-content/themes/druks2/img/local/mockup.png" alt="">
+            <img src="https://druksdeal.nl/wp-content/uploads/2024/01/mockup.png" alt="">
         </div>
    </section>
 
