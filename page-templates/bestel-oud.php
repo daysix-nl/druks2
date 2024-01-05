@@ -16,6 +16,7 @@
 Francien spijkert je bij over hoe je nog meer uit je AD(H)D kunt halen, door dingen op geheel eigen’wijze’ uit te vogelen. Ook het succesvolle TIKKIE TERUG AAN DUO hoofdstuk vind je terug in dit boek. 
 <br><br>
 DRUKS 2 is zowel een trap onder je kont als een arm om je heen. Eén ding is zeker: na het lezen van dit boek zal je AD(H)D nooit meer hetzelfde zijn.</p>
+<br><br>Bestel via onderstaand formulier. </p>
                 
             </div>
             
