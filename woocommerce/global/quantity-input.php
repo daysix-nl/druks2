@@ -25,7 +25,7 @@ $label = ! empty( $args['product_name'] ) ? sprintf( esc_html__( '%s quantity', 
 
 ?>
 <div class="max-w-[11vw] lg:max-w-[4vw] py-2">
-<img src="https://druksdeal.nl/wp-content/uploads/2024/01/mockup.png" alt="" class="">
+<img src="https://druksdeal.nl/wp-content/uploads/2024/01/DRUKS-2-front.jpg" alt="" class="">
 </div>
 
 <div class="input-quantity fle flex-col justify-between pb-2 max-w-[300px]">
