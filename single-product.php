@@ -24,7 +24,11 @@ if ( post_password_required() ) {
     <section class="bg-[#012F8C] relative py-[13vw] md:py-[8vw]">
         <div class="w-[95vw] md:w-[70vw] md:ml-[8vw] mx-auto md:mx-[unset] z-[50] relative">
             <h1 class="text-[14vw] leading-[13vw] md:text-[5.7vw] md:leading-[6.7vw] text-white uppercase font-bison">Bestel hier <br class="md:hidden"><span class="text-[#FF008A]">Druks 2</span></h1>
-            <p class="text-[4vw] leading-[5.9vw] md:text-[1.2vw] md:leading-[1.9vw] text-white font-satoshi font-bold mt-[5vw] md:mt-[1vw] mr-[2.5vw]">Ik wil maar één ding voor iedereen met AD(H)D, en dat is floreren. Kunnen vertrouwen op je eigen gevoel en je eigen kunnen. Nee durven zeggen, je eigen koers durven varen. Precies dat is wat ik wil bereiken met DRUKS 2. <br><br>Dit boek is zowel een trap onder je kont als een arm om je heen. Eén ding is zeker: na het lezen van dit boek zal je AD(H)D nooit meer hetzelfde zijn.<br><br>Bestel via onderstaand formulier. </p>
+            <p class="text-[4vw] leading-[5.9vw] md:text-[1.2vw] md:leading-[1.9vw] text-white font-satoshi font-bold mt-[5vw] md:mt-[1vw] mr-[2.5vw]">DRUKS 2 zorgt dat je succesvol kunt dealen met je AD(H)D.
+<br><br>
+Francien spijkert je bij over hoe je nog meer uit je AD(H)D kunt halen, door dingen op geheel eigen’wijze’ uit te vogelen. Ook het succesvolle TIKKIE TERUG AAN DUO hoofdstuk vind je terug in dit boek.
+<br><br>
+DRUKS 2 is zowel een trap onder je kont als een arm om je heen. Eén ding is zeker: na het lezen van dit boek zal je AD(H)D nooit meer hetzelfde zijn.<br><br>Bestel via onderstaand formulier.</p>
         </div>
         <div class="w-[95vw] md:w-[49vw] mx-auto md:mx-[unset] md:ml-[8vw] z-[50] relative  pt-[7vw] md:pt-[1.5vw]">
             <?php
