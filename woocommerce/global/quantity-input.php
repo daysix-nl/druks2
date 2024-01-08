@@ -35,6 +35,7 @@ $label = ! empty( $args['product_name'] ) ? sprintf( esc_html__( '%s quantity', 
 		 */
 		do_action( 'woocommerce_before_quantity_input_field' );
 		?>
+		<img src="https://druksdeal.nl/wp-content/uploads/2024/01/mockup.png" alt="" class="max-w-[8vw] lg:max-w-[4vw] mt-2">
 		<label class="screen-reader-text" for="<?php echo esc_attr( $input_id ); ?>"><?php echo esc_attr( $label ); ?></label>
 		
 		<div class="quantity-decrease h-3 w-3 bg-transparent border-[1px] border-[#fff] bg-white flex justify-center items-center">
