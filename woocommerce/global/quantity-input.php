@@ -24,7 +24,10 @@ defined( 'ABSPATH' ) || exit;
 $label = ! empty( $args['product_name'] ) ? sprintf( esc_html__( '%s quantity', 'woocommerce' ), wp_strip_all_tags( $args['product_name'] ) ) : esc_html__( 'Quantity', 'woocommerce' );
 
 ?>
-<img src="https://druksdeal.nl/wp-content/uploads/2024/01/mockup.png" alt="" class="max-w-[8vw] lg:max-w-[4vw] mt-2">
+<div class="max-w-[8vw] lg:max-w-[4vw] mt-2">
+<img src="https://druksdeal.nl/wp-content/uploads/2024/01/mockup.png" alt="" class="">
+</div>
+
 <div class="input-quantity fle flex-col justify-between pb-2 max-w-[300px]">
 	<p class="text-18 leading-32 font-satoshi font-bold text-[#fff] pb-1">Selecteer het aantal</p>
 	<div class="quantity flex h-[55px] w-[140px] px-[15px] bg-white items-center justify-between rounded-[15px]">
