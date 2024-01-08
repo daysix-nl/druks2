@@ -24,7 +24,7 @@ defined( 'ABSPATH' ) || exit;
 $label = ! empty( $args['product_name'] ) ? sprintf( esc_html__( '%s quantity', 'woocommerce' ), wp_strip_all_tags( $args['product_name'] ) ) : esc_html__( 'Quantity', 'woocommerce' );
 
 ?>
-<div class="max-w-[11vw] lg:max-w-[4vw] my-2">
+<div class="max-w-[11vw] lg:max-w-[4vw] py-2">
 <img src="https://druksdeal.nl/wp-content/uploads/2024/01/mockup.png" alt="" class="">
 </div>
 
