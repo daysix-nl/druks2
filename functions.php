@@ -810,8 +810,70 @@ add_action('template_redirect', 'redirect_after_add_to_cart');
 // add_filter('woocommerce_billing_fields', 'uitschakelen_onnodige_adresvelden');
 // add_filter('woocommerce_shipping_fields', 'uitschakelen_onnodige_adresvelden');
 
+add_action('wp_ajax_update_cart_shipping', 'update_cart_shipping');
+add_action('wp_ajax_nopriv_update_cart_shipping', 'update_cart_shipping');
 
+function update_cart_shipping() {
+    if (isset($_POST['country'])) {
+      $country = sanitize_text_field($_POST['country']);
+        WC()->customer->set_shipping_country($country);
+        WC()->customer->save();
+        WC()->cart->calculate_totals();
 
+        setcookie('shipping_country', $country, time() + 86400, "/");
 
+        $cart_data = array(
+            'total' => wc_price(WC()->cart->total),
+            'shipping_total' => wc_price(WC()->cart->shipping_total)
+        );
 
+        header('Content-Type: application/json');
+        echo json_encode($cart_data);
+    } else {
+        echo json_encode(array('error' => 'Country not set'));
+    }
+
+    wp_die();
+}
+
+add_action('wp_footer', 'state_update_checkout', 50);
+function state_update_checkout() {
+    ?>
+        <script type='text/javascript'>
+            jQuery(function($){
+                const savedCountry = '<?php echo $_COOKIE['shipping_country'] ?? ''; ?>';
+                $('select[name="billing_country"]').val(savedCountry);
+                $(document.body).on('change', 'select[name="billing_country"]', function(){
+                    const selectedCountry = $(this).val();
+
+                    $.ajax({
+                        url: '/wp-admin/admin-ajax.php',
+                        type: 'POST',
+                        data: {
+                            'action': 'update_cart_shipping',
+                            'country': selectedCountry
+                        },
+                        success: function(response) {
+                            const shippingCostElements = document.querySelectorAll('.shipping_cost');
+                            const totalAmountElements = document.querySelectorAll('.total_amount');
+
+                            for (let i = 0; i < shippingCostElements.length; i++) {
+                        
+                                console.log(shippingCostElements[i], totalAmountElements[i]);
+
+                                if (response.shipping_total.includes("10,00")) {
+                                    shippingCostElements[i].innerHTML = response.shipping_total;
+                                } else {
+                                    shippingCostElements[i].innerHTML = '<span class="text-[#ff007d]">Gratis</span>';
+                                }
+
+                                totalAmountElements[i].innerHTML = response.total;
+                            }
+                        }
+                    });
+                });
+            });
+        </script>
+    <?php
+}
 

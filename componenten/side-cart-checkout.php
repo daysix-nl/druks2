@@ -46,7 +46,7 @@
                                                     <div class="">
                                                         <div class="flex justify-between">
                                                             <a href="<?php the_permalink($product->get_id());?>" class="font-satoshi text-18 leading-18 text-[#2B2828] max-w-[227px] font-semibold"><?php echo esc_html($product->get_name()); ?></a>
-                                                            <?php echo '<a class="remove-item" href="' . esc_url(WC()->cart->get_remove_url($cart_item_key)) . '">
+                                                            <?php echo '<a class="remove-item" href="' . esc_url(wc_get_cart_remove_url($cart_item_key)) . '">
                                                             <svg class="w-[29px] h-[29px] ml-[15px]" width="100%" height="auto" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                                                 <defs>
                                                                     <rect id="path-hprcwq4s5d-1" x="0" y="0" width="14.792" height="18.609"></rect>
@@ -109,30 +109,32 @@
                             <div class="flex justify-between pl-0 md:pl-3 lg:pl-0">
                                 <h4 class="font-satoshi text-16 leading-16 font-semibold text-[#2B2828]">Subtotaal</h4>
                                 <p class="font-satoshi text-16 leading-16 font-semibold text-[#2B2828]">
-                                    <?php $total = WC()->cart->get_cart_total();
-                                    echo '' . $total;
+                                    <?php 
+                                        $total = WC()->cart->get_cart_total();
+                                        echo '' . $total;
                                     ?>
                                 </p>
                             </div>
                             <div class="flex justify-between pl-0 md:pl-3 lg:pl-0">
                                 <h4 class="font-satoshi text-16 leading-16 font-normal text-[#2B2828]">Bezorgkosten</h4>
-                                <p class="font-satoshi text-16 leading-16 font-normal text-[#2B2828]">
+                                <p class="font-satoshi text-16 leading-16 font-normal text-[#2B2828] shipping_cost">
                                     <?php
-                                    $verzendkosten = WC()->cart->shipping_total;
-
-                                    if ($verzendkosten >= 1) {
-                                        echo '' . wc_price($verzendkosten);
-                                    } else {
-                                        echo '<span class="text-[#ff007d]">Gratis</span>';
-                                    }
+                                        $verzendkosten = WC()->cart->shipping_total;
+                                        if ($verzendkosten > 0) {
+                                            echo '' . wc_price($verzendkosten);
+                                        } else {
+                                            echo '<span class="text-[#ff007d]">Gratis</span>';
+                                        }
                                     ?>
                                 </p>
                             </div>
                             <hr class="border-[#B5BBB8] border-1 mt-[10px] mb-[10px]">
                             <div class="flex justify-between pl-0 md:pl-3 lg:pl-0">
                                 <h4 class="font-satoshi text-16 leading-16 font-semibold text-[#2B2828]">Totaal</h4>
-                                <p class="font-satoshi text-16 leading-16 font-semibold text-[#2B2828]">
+     
+                                <p class="font-satoshi text-16 leading-16 font-semibold text-[#2B2828] total_amount">
                                     <?php
+                                   
                                     $total_bedrag = WC()->cart->total;
                                     echo '' . wc_price($total_bedrag);
                                     ?>
@@ -163,12 +165,3 @@
 
 
             </div>
-
-<script>
-    function refreshPage() {
-        // Wacht 2000 milliseconden (2 seconden) en vernieuw dan de pagina
-        setTimeout(function () {
-            location.reload();
-        }, 2000);
-    }
-</script>
