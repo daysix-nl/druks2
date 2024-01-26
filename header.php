@@ -19,5 +19,4 @@
 <body <?php body_class( 'page-block' ); ?>>
 <header>
 
-
 </header>

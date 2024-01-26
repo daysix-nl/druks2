@@ -6,17 +6,16 @@
 
  get_header(); ?>
 
-<main>
-    
-
-
-</main>
-
 
 
 <main class="">
     <section class="bg-[#012F8C] relative py-[13vw] md:py-[8vw] overflow-hidden">
         <div class="w-[95vw] md:w-[70vw] md:ml-[8vw] mx-auto md:mx-[unset] z-[50] relative">
+            <button
+            onclick="history.go(-1)"
+            class="text-[7vw] md:text-[2.7vw] uppercase font-bison bg-[#CDF200] text-[#FF0079] md:hover:bg-[#FF93C1] md:hover:text-[#CDF200] rounded-[11px] px-[8vw] md:px-[4vw] py-[0vw] flex items-center w-fit relative mb-3">
+            <span class="mb-[0.2vw]">Terug</span>
+            </button>
             <h1 class="text-[14vw] leading-[13vw] md:text-[5.7vw] md:leading-[6.7vw] text-white uppercase font-bison">Zo krijg je geld <br class="md:hidden"><span class="text-[#FF008A]">terug</span> van DUO</h1>
             <p class="text-[4vw] leading-[5.9vw] md:text-[1.2vw] md:leading-[1.9vw] text-white font-satoshi font-bold mt-[5vw] md:mt-[1vw] mr-[2.5vw]">In dit hoofdstuk leg ik je uit hoe het mij gelukt is om in aanmerking te komen voor de DUO-regeling waarbij een deel van mijn studieschuld is kwijtgescholden vanwege mijn ADHD(/ADD/AUTISME/DEPRESSIE). Daarnaast krijg je ook de bijbehorende formulieren. Dat scheelt jou weer tijd en energie. Die je mooi kunt stoppen in het opstarten van de procedure die volledig staat uitgelegd in dit hoofdstuk. Zeker weten of je in aanmerking komt voor het hoofdstuk, bekijk dan even de veelgestelde vragen.<br><br>Bestel via onderstaand formulier het hoofdstuk. </p>
         </div>

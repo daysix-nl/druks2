@@ -76,20 +76,14 @@
 
                                                     <div class="flex justify-between items-center pt-1">
                                                         <div class="flex">
-                                                        <?php
-                                                            // Haal het aantal items van het specifieke product op in de winkelmand
-                                                            $product_cart_quantity = WC()->cart->get_cart_item_quantities();
-
-                                                            // Controleer of het product in de winkelmand zit
-                                                            if (isset($product_cart_quantity[$product_id])) {
-                                                                $aantal_items = $product_cart_quantity[$product_id];
-                                                                echo '' . $aantal_items . ' x  ' . wc_price($product->get_price()) . '';
-                                                            } else {
-                                                                echo 'Dit product is niet toegevoegd aan de winkelmand.';
-                                                            }
+                                                            <?php 
+                                                                echo '<select class="custom-quantity-input" data-cart-item-key="' . esc_attr($cart_item_key) . '" >';
+                                                                for ($i = $product->get_min_purchase_quantity(); $i <= 10; $i++) {
+                                                                    echo '<option value="' . $i . '"' . selected($cart_item['quantity'], $i, false) . '>' . $i . '</option>';
+                                                                }
+                                                                echo '</select>';
                                                             ?>
                                                         </div>
-                                                        <!-- <?php echo '<span class="product-price font-satoshi text-16 leading-16 text-[#2B2828] font-semibold">' . wc_price($product->get_price() * $cart_item['quantity']) . '</span>';?> -->
                                                     </div>
                                                 </div>
                                             </div>

@@ -1,0 +1,25 @@
+{
+  "name": "wysiwyg",
+  "title": "wysiwyg",
+  "description": "",
+  "category": "bibliotheek",
+  "icon": "warningh",
+  "keywords": ["block"],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "wysiwyg.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/wp-content/themes/freekvonk/img/preview-images/leeg.jpeg",
+        "is_preview": true
+      }
+    }
+  }
+}

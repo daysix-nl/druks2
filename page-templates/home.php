@@ -137,7 +137,20 @@
                 </svg>
                 <h2 class="order-3 md:order-2 text-[9vw] leading-[9vw] md:text-[5.7vw] md:leading-[6.7vw] text-white uppercase font-bison mt-[6vw] md:mt-[0.8vw] relative z-[56] text-center md:text-left mx-auto md:mx-[unset]">Succesvol dealen met AD(h)D</h2>
                 <p class="order-4 md:order-3 text-[4.5vw] leading-[5.9vw] md:text-[1.61vw] md:leading-[2.2vw] text-white font-satoshi font-bold max-w-[70vw] md:max-w-[55vw] mt-[3vw] md:mt-[0.8vw] text-center md:text-left mx-auto md:mx-[unset] relative z-[50]">Met DRUKS 2 ga je van chronisch uitstellen naar alles is uitvogelbaar. Inclusief Tikkie terug aan DUO hoofdstuk.</p>
-                <a href="https://druksdeal.nl/product/druks-2/" class="order-2 md:order-4 text-[9.2vw] md:text-[2.7vw] uppercase font-bison bg-[#CDF200] text-[#FF0079] md:hover:bg-[#FF93C1] md:hover:text-[#CDF200] rounded-[11px] px-[8vw] md:px-[4vw] py-[0vw] flex items-center w-fit mt-[77vw] md:mt-[1.9vw] mx-auto md:mx-[unset] relative z-[50]"><span class="mb-[0.2vw]">Bestel nu druks</span></a>
+                    <?php 
+                    $sku = 'DRUKS2';
+                    $product_id = wc_get_product_id_by_sku($sku);
+                    $add_to_cart_url = wc_get_cart_url() . '?add-to-cart=' . $product_id . '&quantity=1';
+                    $checkout_url = wc_get_checkout_url();
+                    ?>
+
+                    <a href="<?php echo $add_to_cart_url; ?>" 
+                    data-quantity="1" 
+                    data-product_id="<?php echo $product_id; ?>" 
+                    class="add_to_cart_button ajax_add_to_cart order-2 md:order-4 text-[9.2vw] md:text-[2.7vw] uppercase font-bison bg-[#CDF200] text-[#FF0079] md:hover:bg-[#FF93C1] md:hover:text-[#CDF200] rounded-[11px] px-[8vw] md:px-[4vw] py-[0vw] flex items-center w-fit mt-[77vw] md:mt-[1.9vw] mx-auto md:mx-[unset] relative z-[50]">
+                    <span class="mb-[0.2vw]">Bestel nu druks</span>
+                    </a>
+                    
             </div>
         </div>
 
@@ -186,3 +199,12 @@
 
 
 
+<script type="text/javascript">
+
+jQuery(function($) {
+    $(document.body).on('added_to_cart', function() {
+        window.location.href = '<?php echo $checkout_url; ?>';
+    });
+});
+    
+</script>
