@@ -575,6 +575,9 @@ video {
 .bottom-2 {
   bottom: 20px;
 }
+.bottom-\[20px\] {
+  bottom: 20px;
+}
 .left-0 {
   left: 0;
 }
@@ -664,9 +667,6 @@ video {
 }
 .top-\[90vw\] {
   top: 90vw;
-}
-.bottom-\[20px\] {
-  bottom: 20px;
 }
 .-z-0 {
   z-index: 0;
@@ -900,9 +900,6 @@ video {
 }
 .w-screen {
   width: 100vw;
-}
-.w-\[300px\] {
-  width: 300px;
 }
 .min-w-full {
   min-width: 100%;
@@ -1164,6 +1161,9 @@ video {
 .font-satoshi {
   font-family: Satoshi, sans-serif;
 }
+.text-12 {
+  font-size: 12px;
+}
 .text-14 {
   font-size: 14px;
 }
@@ -1209,9 +1209,6 @@ video {
 .text-\[9vw\] {
   font-size: 9vw;
 }
-.text-12 {
-  font-size: 12px;
-}
 .font-bold {
   font-weight: 700;
 }
@@ -1223,6 +1220,9 @@ video {
 }
 .uppercase {
   text-transform: uppercase;
+}
+.leading-12 {
+  line-height: 12px;
 }
 .leading-16 {
   line-height: 16px;
@@ -1256,9 +1256,6 @@ video {
 }
 .leading-\[9vw\] {
   line-height: 9vw;
-}
-.leading-12 {
-  line-height: 12px;
 }
 .text-\[\#000000\] {
   --tw-text-opacity: 1;
