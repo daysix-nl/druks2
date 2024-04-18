@@ -176,15 +176,6 @@
         </a>
     </section>
 
-
-
-
-
-  
-
-
-
-    
      <section class="w-[100vw] h-[180vw] md:h-[55.64vw] overflow-hidden relative">
         <a href="/druks-2" class="cursor-default">
             <img class="h-full object-cover object-center absolute top-0 left-0 w-full" src="/wp-content/themes/druks2/img/local/bg-druks.png" alt="">
