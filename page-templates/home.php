@@ -159,6 +159,15 @@
         </div>
    </section>
 
+  <section class="bg-zalm pt-[15vw] md:pt-[7vw] pb-[15vw] md:pb-[9vw]">
+        <h2 class="text-[17vw] leading-[15vw] md:text-[5.7vw] md:leading-[5.7vw] text-center text-blue mx-auto relative font-bison z-10 mb-[-11vw] md:mb-[-3vw] uppercase">Zo krijg je geld <br><span class="text-pink">terug</span> van DUO</h2>
+        <div class="bg-transition-standing-to-horizon rounded-[23px] w-[95vw] md:w-[50vw] md:-rotate-1 px-[6vw] md:px-[4vw] pt-[15vw] md:pt-[4.7vw] pb-[9vw] md:pb-[4.7vw] bg-white mx-auto -z-0 relative">
+            <p class="text-[4.5vw] leading-[5.9vw] md:text-[1.4vw] md:leading-[2.4vw] text-[#000000] font-satoshi font-bold text-center md:text-left">In dit hoofdstuk leg ik je uit hoe het mij gelukt is om in aanmerking te komen voor de DUO-regeling waarbij een deel van mijn studieschuld is kwijtgescholden vanwege mijn ADHD (/ADD/AUTISME/DEPRESSIE). Daarnaast krijg je ook de bijbehorende formulieren. Dat scheelt jou weer tijd en energie. Die je mooi kunt stoppen in het opstarten van de procedure die volledig staat uitgelegd in dit hoofdstuk. Zeker weten of je in aanmerking komt voor het hoofdstuk, bekijk dan even de veelgestelde vragen.</p>
+            <a href="/duo" class="md:absolute text-[7vw] md:text-[2.7vw] uppercase font-bison bg-[#012F8C] text-[#fff] md:hover:bg-[#FF93C1] md:hover:text-[#CDF200] rounded-[11px] px-[8vw] md:px-[4vw] py-[0vw] flex items-center w-fit mt-[8vw] md:mt-[3vw] mx-auto left-[8vw] md:rotate-[1deg]"><span class="mb-[0.2vw]">Koop het DUO hoofdstuk hier</span></a>
+        </div>
+    </section>
+
+
    <section class="w-[100vw] h-[208.6vw] md:h-[56.71vw] relative pt-[4vw]">
         <a href="/druks-2" class="cursor-default">
             <h2 class="relative text-[9.4vw] leading-[10.4vw] md:text-[4.5vw] md:leading-[5.5vw] mt-[7vw] md:mt-[unset] text-[#000] uppercase font-bison z-[56] text-center mx-auto bg-[#fff] w-[95vw] md:w-fit px-[3vw]"><span class="pb-[0.2vw]">Rechtstreeks bij de dealer</span></h2>
@@ -171,14 +180,7 @@
 
 
 
-    <section class="bg-zalm pt-[15vw] md:pt-[7vw] pb-[15vw] md:pb-[9vw]">
-        <h2 class="text-[17vw] leading-[15vw] md:text-[5.7vw] md:leading-[5.7vw] text-center text-blue mx-auto relative font-bison z-10 mb-[-11vw] md:mb-[-3vw] uppercase">Zo krijg je geld <br><span class="text-pink">terug</span> van DUO</h2>
-        <div class="bg-transition-standing-to-horizon rounded-[23px] w-[95vw] md:w-[50vw] md:-rotate-1 px-[6vw] md:px-[4vw] pt-[15vw] md:pt-[4.7vw] pb-[9vw] md:pb-[4.7vw] bg-white mx-auto -z-0 relative">
-            <p class="text-[4.5vw] leading-[5.9vw] md:text-[1.4vw] md:leading-[2.4vw] text-[#000000] font-satoshi font-bold text-center md:text-left">In dit hoofdstuk leg ik je uit hoe het mij gelukt is om in aanmerking te komen voor de DUO-regeling waarbij een deel van mijn studieschuld is kwijtgescholden vanwege mijn ADHD (/ADD/AUTISME/DEPRESSIE). Daarnaast krijg je ook de bijbehorende formulieren. Dat scheelt jou weer tijd en energie. Die je mooi kunt stoppen in het opstarten van de procedure die volledig staat uitgelegd in dit hoofdstuk. Zeker weten of je in aanmerking komt voor het hoofdstuk, bekijk dan even de veelgestelde vragen.</p>
-            <a href="/duo" class="md:absolute text-[7vw] md:text-[2.7vw] uppercase font-bison bg-[#012F8C] text-[#fff] md:hover:bg-[#FF93C1] md:hover:text-[#CDF200] rounded-[11px] px-[8vw] md:px-[4vw] py-[0vw] flex items-center w-fit mt-[8vw] md:mt-[3vw] mx-auto left-[8vw] md:rotate-[1deg]"><span class="mb-[0.2vw]">Koop het DUO hoofdstuk hier</span></a>
-        </div>
-    </section>
-
+  
 
 
 
