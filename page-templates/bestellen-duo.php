@@ -216,7 +216,7 @@
                 <button class="accordion text-14 leading-22 lg:text-18 lg:leading-30 py-2 px-[25px] lg:px-3 lg:py-[25px] flex items-center font-bold">Wat is de hardheidsclausule?</button>
                 <div class="panel px-[25px] lg:px-3">
                     <p class="pb-3 pt-1 text-14 leading-22 lg:text-18 lg:leading-30">DUO mag in heel bijzondere situaties afwijken van de wet. Dat mag alleen als:<br>
-•	het toepassen van de wet ernstige en onredelijke gevolgen voor u heeft, en
+•	het toepassen van de wet ernstige en onredelijke gevolgen voor u heeft, en <br>
 •	deze gevolgen niet de bedoeling zijn van de wet. <br>
 Deze bevoegdheid van DUO noemen we de ‘hardheidsclausule’.
 
