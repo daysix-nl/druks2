@@ -143,6 +143,110 @@
                 </div>
             </div>
 
+
+            <!-- NIEUWE VRAGEN -->
+
+             <div class="accordion-item rounded-[20px]"> 
+                <button class="accordion text-14 leading-22 lg:text-18 lg:leading-30 py-2 px-[25px] lg:px-3 lg:py-[25px] flex items-center font-bold">‘Ik heb met DUO gebeld, en zij geven aan dat ik hier alleen voor in aanraking kom als…’</button>
+                <div class="panel px-[25px] lg:px-3">
+                    <p class="pb-3 pt-1 text-14 leading-22 lg:text-18 lg:leading-30">Ik ga je hier gelijk afkappen. DUO kan aan de lijn vrij recht toe, recht aan zijn. Dat is niet uit onaardigheid. Het is enkel een richtlijn. Het is de decaan of studiebegeleider die het beleid van DUO uitvoert. Daarom dient je verzoek ook altijd via een decaan of studiebegeleider te verlopen (tenzij je een WAJONG uitkering hebt gehad, dan kun je je verzoek rechtstreeks bij DUO zelf indienen). De decaan is degene die in eerste lijn besluit om jouw verzoek wel of niet te ondersteunen. DUO gaat vaak in eerste lijn mee met de uitspraak van de decaan. Mocht je bezwaar zijn afgewezen dan kun je in beroep gaan. In tweede lijn duikt DUO zelf i.p.v. de decaan verder in jouw zaak. En DUO kijkt dan met de menselijke maat naar jouw verzoek. Vaak krijg je het dan in veel gevallen alsnog toegewezen. Voorbeeldbrieven om in bezwaar te gaan vind je ook in het hoofdstuk zelf. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion-item rounded-[20px]"> 
+                <button class="accordion text-14 leading-22 lg:text-18 lg:leading-30 py-2 px-[25px] lg:px-3 lg:py-[25px] flex items-center font-bold">Ik heb mijn studieschuld al afbetaald. Kan ik dan nog steeds aanspraak maken op de regeling?</button>
+                <div class="panel px-[25px] lg:px-3">
+                    <p class="pb-3 pt-1 text-14 leading-22 lg:text-18 lg:leading-30">Ja! De DUO regelingen die ik mijn hoofdstuk omschrijf zijn met terugwerkende kracht aan te vragen. Ook als je je studieschuld dus al deels of zelfs helemaal hebt afbetaald. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion-item rounded-[20px]"> 
+                <button class="accordion text-14 leading-22 lg:text-18 lg:leading-30 py-2 px-[25px] lg:px-3 lg:py-[25px] flex items-center font-bold">Ik ben pas (ver) na mijn studie gediagnostiseerd, kan ik dan ook aanspraak maken op de DUO-regeling?</button>
+                <div class="panel px-[25px] lg:px-3">
+                    <p class="pb-3 pt-1 text-14 leading-22 lg:text-18 lg:leading-30">Ja. Ik ben zelf pas 9 jaar na mijn afstuderen gediagnosticeerd met mijn AD(H)D. En heb ook toen pas gebruik gemaakt van deze regeling. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion-item rounded-[20px]"> 
+                <button class="accordion text-14 leading-22 lg:text-18 lg:leading-30 py-2 px-[25px] lg:px-3 lg:py-[25px] flex items-center font-bold">Kun je maar één keer een verlenging van de prestatiebeurs krijgen?</button>
+                <div class="panel px-[25px] lg:px-3">
+                    <p class="pb-3 pt-1 text-14 leading-22 lg:text-18 lg:leading-30">Ja. Je kunt daar maar één keer gebruik van maken. Dus heb je deze tijdens het studeren zelf al ontvangen dan kun je er niet nog een keer voor in aanmerking komen. Enkel als je je studie niet hebt afgemaakt. Dan kom je weer voor een ander deel van de rekening in aanmerking. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion-item rounded-[20px]"> 
+                <button class="accordion text-14 leading-22 lg:text-18 lg:leading-30 py-2 px-[25px] lg:px-3 lg:py-[25px] flex items-center font-bold">Studievertraging opgelopen in het buitenland of je buitenlandse studie niet afgemaakt vanwege functiebeperkende omstandigheden, wie is er dan tekeningsbevoegd binnen die onderwijsinstelling (voorwaarde je ontving DUO)? </button>
+                <div class="panel px-[25px] lg:px-3">
+                    <p class="pb-3 pt-1 text-14 leading-22 lg:text-18 lg:leading-30">Als er GEEN sprake is van een decaan (dit geldt enkel voor een buitenlandse studies), dan volstaat het om een opleidingshoofd of -baas of te laten tekenen van diezelfde school het formulier te laten ondertekenen. 
+                        <br><br>
+                        Toch kan een opleidingshoofd dit weigeren. Indien het opleidingshoofd dit weigert, moet ook dit op papier verklaard worden. Inclusief stempel (verplicht) en handtekening (verplicht). Zodat jij de weigering in combinatie met de medische verklaring alsnog zelf kunt indienen bij via het postadres zoals vermeld staat in het hoofdstuk. 
+                        <br><br>
+                        Ter benadrukking: dit geldt enkel voor studies die in het buitenland gevolgd zijn. 
+                        <br><br>
+                        Samengevat: Indien er geen opleidingshoofd of iets is, het formulier invullen met dat men niemand gemachtigd heeft om dit te tekenen, dan kan dit in combinatie met de medische verklaring ook voldoende zijn voor DUO. 
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion-item rounded-[20px]"> 
+                <button class="accordion text-14 leading-22 lg:text-18 lg:leading-30 py-2 px-[25px] lg:px-3 lg:py-[25px] flex items-center font-bold">Waarom lopen de bedragen zo uiteen? </button>
+                <div class="panel px-[25px] lg:px-3">
+                    <p class="pb-3 pt-1 text-14 leading-22 lg:text-18 lg:leading-30">De meeste mensen krijgen een bedrag kwijtgescholden dat ergens tussen de €1.200 en €3.000 zit. Deze mensen hebben vaak wel (alsnog) een diploma op zak en daarmee baanperspectief om in diens werkende levende de rest van de studieschuld af te lossen.
+                        <br><br>
+                        Toch zijn er ook veel uitschieters. Die uitschieters komen voor onder de mensen die helemaal geen (mbo, hbo of uni) diploma op zak hebben en daarmee volgens DUO standaarden minder baanperspectief hebben om diens werkende leven de studieschuld geheel af te betalen. 
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion-item rounded-[20px]"> 
+                <button class="accordion text-14 leading-22 lg:text-18 lg:leading-30 py-2 px-[25px] lg:px-3 lg:py-[25px] flex items-center font-bold">Help, mijn decaan ondersteunt mijn verzoek niet!</button>
+                <div class="panel px-[25px] lg:px-3">
+                    <p class="pb-3 pt-1 text-14 leading-22 lg:text-18 lg:leading-30">Dat komt geregeld voor. Soms is dat terecht. Soms is dat onterecht. Toch is het belangrijk dat je zaak - zelfs bij een negatief advies - wordt ingediend bij DUO zelf door de decaan of studiebegeleider. Zodat jij na 8 weken zelf in bezwaar kunt gaan bij DUO. In eerste lijn gaat DUO namelijk vaak mee met het advies van de decaan. In tweede lijn - dus nadat je bezwaar hebt aangetekend (dit staat uitgelegd in het hoofdstuk) - In tweede lijn duikt DUO zelf i.p.v. de decaan verder in jouw zaak. En DUO kijkt dan met de menselijke maat (https://www.rijksoverheid.nl/documenten/beleidsnotas/2023/04/20/nota-bij-brief-over-menselijke-maat-in-uitvoering-van-de-studiefinanciering) naar jouw verzoek. Vaak krijg je het dan in veel gevallen alsnog toegewezen. Voorbeeldbrieven om in bezwaar te gaan vind je ook in het hoofdstuk zelf. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion-item rounded-[20px]"> 
+                <button class="accordion text-14 leading-22 lg:text-18 lg:leading-30 py-2 px-[25px] lg:px-3 lg:py-[25px] flex items-center font-bold">Wat is de hardheidsclausule?</button>
+                <div class="panel px-[25px] lg:px-3">
+                    <p class="pb-3 pt-1 text-14 leading-22 lg:text-18 lg:leading-30">DUO mag in heel bijzondere situaties afwijken van de wet. Dat mag alleen als:<br>
+•	het toepassen van de wet ernstige en onredelijke gevolgen voor u heeft, en
+•	deze gevolgen niet de bedoeling zijn van de wet. <br>
+Deze bevoegdheid van DUO noemen we de ‘hardheidsclausule’.
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion-item rounded-[20px]"> 
+                <button class="accordion text-14 leading-22 lg:text-18 lg:leading-30 py-2 px-[25px] lg:px-3 lg:py-[25px] flex items-center font-bold">Hoe doe ik een beroep op de hardheidsclausule?</button>
+                <div class="panel px-[25px] lg:px-3">
+                    <p class="pb-3 pt-1 text-14 leading-22 lg:text-18 lg:leading-30">Beroep doen op hardheidsclausule<br><br>
+Wordt u onredelijk benadeeld door een wet die DUO uitvoert? Dan kunt u ons vragen om de hardheidsclausule toe te passen. U vraagt DUO dan om af te wijken van de regels die in de wet staan.<br>
+•			Beschrijf in een brief zo duidelijk mogelijk wat uw situatie is. En waarom de wet in uw geval onredelijk is.<br>
+•			Stuur uw verzoek naar:DUOPostbus 301559700 LG Groningen
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion-item rounded-[20px]"> 
+                <button class="accordion text-14 leading-22 lg:text-18 lg:leading-30 py-2 px-[25px] lg:px-3 lg:py-[25px] flex items-center font-bold">Ik studeer nog, maar kan er door mijn functiebeperkende omstandigheid niet naast werken. Zijn er naast de geldende DUO regelingen nog andere fondsen waar ik aanspraak op kan maken?</button>
+                <div class="panel px-[25px] lg:px-3">
+                    <p class="pb-3 pt-1 text-14 leading-22 lg:text-18 lg:leading-30">Ja! Namelijk de Studietoeslag van je gemeente. Google dit even. Je kunt dit enkel aanvragen als je nog studeert en dit is niet met terugwerkende kracht aan te vragen. Deze regeling verloopt via je gemeente en dus niet via DUO! De studietoeslag is er voor studenten op het mbo, hbo en universiteit. Deze regeling staat niet omschreven in mijn dit hoofdstuk. In mijn hoofdstuk gaat het echt over de DUO regelingen.
+<br><br>
+Sommige Universiteiten en hbo’s hebben ook nog zoiets dat het Profileringsfonds heeft. Niet iedere universiteit of hbo instelling instelling Nederland heeft dit fonds. Dus Google even of jouw onderwijsinstelling beschikt over dit fonds ter financiële ondersteuning. Mbo-instellingen hebben deze regeling (helaas) niet. 
+
+                    </p>
+                </div>
+            </div>
+            <!-- EINDE EXTRA VRAGEN -->
             
         </div>
     </section>
