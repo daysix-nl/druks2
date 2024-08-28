@@ -1,5 +1,12 @@
 .accordion-item {
     background-color: #fff;
+    width: 94vw !important;
+
+    // MD
+    @media (min-width: 768px) {
+        width: 84vw !important;
+    }
+
 
     .accordion {
         background-color: #fff;
