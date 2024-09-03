@@ -31,11 +31,11 @@ DRUKS 2 is zowel een trap onder je kont als een arm om je heen. Eén ding is zek
         <img class="h-full object-cover object-center absolute top-0 left-0 w-full" src="/wp-content/themes/druks2/img/local/bg-druks.png" alt="">
     </section>
 
-    <section class="bg-[#012F8C] py-[15vw] md:py-[7vw]">
+    <!-- <section class="bg-[#012F8C] py-[15vw] md:py-[7vw]">
         <h2 class="text-[12vw] leading-[12vw] md:text-[5.7vw] md:leading-[6vw] text-[#fff] uppercase font-bison relative z-[56] text-center mx-auto bg-[#FF008A] w-fit px-[3vw]"><span class="pb-[0.2vw]">Contact</span></h2>
         <p class="text-[4.5vw] leading-[5.9vw] md:text-[1.61vw] md:leading-[2.2vw] text-white font-satoshi font-bold max-w-[79vw] md:max-w-[55vw] mt-[8vw] md:mt-[3vw] text-center mx-auto">Vragen? Interesse? Neem contact met mij op via onderstaand mailadres om de mogelijkheden te bespreken.</p>
         <a href="mailto:hello@francienregelink.nl" class="text-[7vw] md:text-[2.7vw] uppercase font-bison bg-[#CDF200] text-[#000000] md:hover:bg-[#FF93C1] md:hover:text-[#CDF200] rounded-[11px] px-[8vw] md:px-[4vw] py-[0vw] flex items-center w-fit mt-[8vw] md:mt-[3vw] mx-auto md:mx-auto"><span class="mb-[0.2vw]">hello@francienregelink.nl</span></a>
-    </section>
+    </section> -->
     
 </main>
 <?php get_footer(''); ?>
