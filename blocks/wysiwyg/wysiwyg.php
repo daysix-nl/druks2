@@ -5,6 +5,6 @@ if (isset($block['data']['preview_image_help'])): ?>
 else: ?>
 
     <div class="wysiwyg-block">
-        <?php the_field('wysiwyg'); ?>
+        <?php echo get_field('wysiwyg'); ?>
     </div>
 <?php endif; ?>
