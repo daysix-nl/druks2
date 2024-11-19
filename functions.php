@@ -911,6 +911,17 @@ function add_wppusher_log_page() {
         20                       // Menu positie
     );
 }
+function add_wppusher_log_page() {
+    add_menu_page(
+        'WPpusher Log',          // Paginatitel
+        'WPpusher Log',          // Menu titel
+        'manage_options',        // Capaciteit
+        'wppusher-log',          // Menu slug
+        'display_wppusher_log',  // Functie voor content
+        'dashicons-list-view',   // Icoon
+        20                       // Menu positie
+    );
+}
 add_action('admin_menu', 'add_wppusher_log_page');
 
 function display_wppusher_log() {
@@ -921,11 +932,11 @@ function display_wppusher_log() {
 
     global $wpdb;
 
-    // Vervang 'wppusher_log' door de naam van de daadwerkelijke tabel waar de push-acties worden opgeslagen.
-    $table_name = $wpdb->prefix . 'wppusher_log'; 
+    // Gebruik de juiste tabelnaam (controleer prefix!)
+    $table_name = $wpdb->prefix . 'wppusher_packages';
 
-    // Ophalen van gegevens uit de tabel
-    $logs = $wpdb->get_results("SELECT * FROM $table_name ORDER BY push_time DESC LIMIT 100");
+    // Ophalen van gegevens (pas kolomnamen aan indien nodig)
+    $logs = $wpdb->get_results("SELECT id, updated_at FROM $table_name ORDER BY updated_at DESC LIMIT 100");
 
     echo '<div class="wrap">';
     echo '<h1>WPpusher Log</h1>';
@@ -942,7 +953,7 @@ function display_wppusher_log() {
         foreach ($logs as $log) {
             echo '<tr>';
             echo '<td>Push</td>'; // Statische tekst "Push"
-            echo '<td>' . esc_html($log->push_time) . '</td>';
+            echo '<td>' . esc_html($log->updated_at) . '</td>'; // Laatste update-datum
             echo '</tr>';
         }
     } else {
@@ -955,5 +966,3 @@ function display_wppusher_log() {
     echo '</table>';
     echo '</div>';
 }
-
-
