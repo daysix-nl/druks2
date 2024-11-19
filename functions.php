@@ -900,5 +900,60 @@ function handle_update_cart_quantity() {
     }
 }
 
+function add_wppusher_log_page() {
+    add_menu_page(
+        'WPpusher Log',          // Paginatitel
+        'WPpusher Log',          // Menu titel
+        'manage_options',        // Capaciteit
+        'wppusher-log',          // Menu slug
+        'display_wppusher_log',  // Functie voor content
+        'dashicons-list-view',   // Icoon
+        20                       // Menu positie
+    );
+}
+add_action('admin_menu', 'add_wppusher_log_page');
+
+function display_wppusher_log() {
+    // Beveiliging: alleen admins kunnen deze pagina bekijken
+    if (!current_user_can('manage_options')) {
+        return;
+    }
+
+    global $wpdb;
+
+    // Vervang 'wppusher_log' door de naam van de daadwerkelijke tabel waar de push-acties worden opgeslagen.
+    $table_name = $wpdb->prefix . 'wppusher_log'; 
+
+    // Ophalen van gegevens uit de tabel
+    $logs = $wpdb->get_results("SELECT * FROM $table_name ORDER BY push_time DESC LIMIT 100");
+
+    echo '<div class="wrap">';
+    echo '<h1>WPpusher Log</h1>';
+    echo '<table class="widefat fixed striped">';
+    echo '<thead>';
+    echo '<tr>';
+    echo '<th>Push</th>';
+    echo '<th>Datum en tijd</th>';
+    echo '</tr>';
+    echo '</thead>';
+    echo '<tbody>';
+
+    if (!empty($logs)) {
+        foreach ($logs as $log) {
+            echo '<tr>';
+            echo '<td>Push</td>'; // Statische tekst "Push"
+            echo '<td>' . esc_html($log->push_time) . '</td>';
+            echo '</tr>';
+        }
+    } else {
+        echo '<tr>';
+        echo '<td colspan="2">Geen push-acties gevonden.</td>';
+        echo '</tr>';
+    }
+
+    echo '</tbody>';
+    echo '</table>';
+    echo '</div>';
+}
 
 
